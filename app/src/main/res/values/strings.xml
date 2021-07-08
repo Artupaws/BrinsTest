@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Brins</string>
+    <string name="brins">Brins</string>
+    <string name="fibonacci">Fibonacci</string>
+    <string name="anagram">Anagram</string>
+    <string name="permutation">Permutation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

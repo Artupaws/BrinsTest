@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_dashboard"
+    app:startDestination="@id/fibonacciFragment2">
+
+    <fragment
+        android:id="@+id/fibonacciFragment2"
+        android:name="com.putra.test.brins.view.fragment.FibonacciFragment"
+        android:label="fragment_fibonacci"
+        tools:layout="@layout/fragment_fibonacci" />
+    <fragment
+        android:id="@+id/anagramFragment2"
+        android:name="com.putra.test.brins.view.fragment.AnagramFragment"
+        android:label="fragment_anagram"
+        tools:layout="@layout/fragment_anagram" />
+    <fragment
+        android:id="@+id/permutationFragment2"
+        android:name="com.putra.test.brins.view.fragment.PermutationFragment"
+        android:label="fragment_permutation"
+        tools:layout="@layout/fragment_permutation" />
+</navigation>

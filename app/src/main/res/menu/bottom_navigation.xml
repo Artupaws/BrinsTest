@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fibonacciFragment"
+        android:icon="@drawable/fibonacci_icon"
+        android:title="@string/fibonacci" />
+
+    <item
+        android:id="@+id/anagramFragment"
+        android:icon="@drawable/input"
+        android:title="@string/anagram" />
+
+    <item
+        android:id="@+id/permutationFragment"
+        android:icon="@drawable/permutation"
+        android:title="@string/permutation" />
+</menu>
