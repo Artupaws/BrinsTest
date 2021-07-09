@@ -17,7 +17,7 @@ class PermutationFragment : Fragment(), View.OnClickListener {
     private var value:Int = 0
     private var max:Int = 0
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentPermutationBinding.inflate(layoutInflater)
         binding.btnPermutation.setOnClickListener(this)
         return binding.root

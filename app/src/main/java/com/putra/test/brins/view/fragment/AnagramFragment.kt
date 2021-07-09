@@ -1,5 +1,6 @@
 package com.putra.test.brins.view.fragment
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -10,7 +11,6 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.putra.test.brins.R
 import com.putra.test.brins.databinding.FragmentAnagramBinding
-import java.util.*
 
 class AnagramFragment : Fragment(), View.OnClickListener {
 
@@ -18,9 +18,9 @@ class AnagramFragment : Fragment(), View.OnClickListener {
     private val binding get() = _binding
     private var value1:String = ""
     private var value2:String = ""
-    private val CHARACTER_RANGE = 256
+    private val charRange = 256
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentAnagramBinding.inflate(inflater, container, false)
         binding.btnAnagram.setOnClickListener(this)
         return binding.root
@@ -70,18 +70,19 @@ class AnagramFragment : Fragment(), View.OnClickListener {
 
     }
 
+    @SuppressLint("SetTextI18n")
     private fun checkAnagram(value1:String, value2:String){
         val str1 = value1
         val str2 = value2
         if (str1.length != str2.length) {
             binding.tvResult.text = "Strings are not Anagrams of each other"
         } else {
-            val count = IntArray(CHARACTER_RANGE)
+            val count = IntArray(charRange)
             for (i in str1.indices) {
                 count[str1[i].code]++
                 count[str2[i].code]--
             }
-            for (i in 0 until CHARACTER_RANGE) {
+            for (i in 0 until charRange) {
                 if (count[i] != 0) {
                     binding.tvResult.text = "Strings are not Anagrams of each other"
                 }

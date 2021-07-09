@@ -21,14 +21,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
-            android:hint="input number for value"/>
+            android:autofillHints="@string/permutation"
+            android:hint="@string/input_number_for_value"/>
 
         <EditText
             android:id="@+id/et_text_two"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="number"
-            android:hint="input number for max length"/>
+            android:autofillHints="@string/permutation"
+            android:hint="@string/input_number_for_max_length"/>
 
         <Button
             android:id="@+id/btn_permutation"

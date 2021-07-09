@@ -17,7 +17,7 @@ class FibonacciFragment : Fragment(),View.OnClickListener {
     private val binding get() = _binding
     private var value:Int = 0
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentFibonacciBinding.inflate(inflater, container, false)
         binding.btnFibonacci.setOnClickListener(this)
         return binding.root
@@ -28,11 +28,9 @@ class FibonacciFragment : Fragment(),View.OnClickListener {
 
         binding.etNumber.addTextChangedListener(object :TextWatcher{
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                false
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                false
             }
 
             override fun afterTextChanged(s: Editable?) {

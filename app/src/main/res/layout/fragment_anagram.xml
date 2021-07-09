@@ -21,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
+            android:autofillHints="@string/anagram"
             android:hint="@string/input_word_here"/>
 
         <EditText
@@ -28,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
+            android:autofillHints="@string/anagram"
             android:hint="@string/input_word_here"/>
 
 

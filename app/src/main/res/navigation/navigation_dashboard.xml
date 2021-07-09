@@ -9,12 +9,20 @@
         android:id="@+id/fibonacciFragment2"
         android:name="com.putra.test.brins.view.fragment.FibonacciFragment"
         android:label="fragment_fibonacci"
-        tools:layout="@layout/fragment_fibonacci" />
+        tools:layout="@layout/fragment_fibonacci" >
+        <action
+            android:id="@+id/action_fibonacciFragment2_to_anagramFragment2"
+            app:destination="@id/anagramFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/anagramFragment2"
         android:name="com.putra.test.brins.view.fragment.AnagramFragment"
         android:label="fragment_anagram"
-        tools:layout="@layout/fragment_anagram" />
+        tools:layout="@layout/fragment_anagram" >
+        <action
+            android:id="@+id/action_anagramFragment2_to_permutationFragment2"
+            app:destination="@id/permutationFragment2" />
+    </fragment>
     <fragment
         android:id="@+id/permutationFragment2"
         android:name="com.putra.test.brins.view.fragment.PermutationFragment"
